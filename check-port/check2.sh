@@ -2,7 +2,6 @@
 
 
 ipport=("192.168.0.1" "173.194.222.113" "87.250.250.242" "127.0.0.1")
-startcheck="$ncstart$ipport"
 now=$(date +%Y-%m-%d-%H-%M)
 
 while ((1==1)); do
