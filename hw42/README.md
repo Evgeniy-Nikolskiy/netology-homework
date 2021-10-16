@@ -28,7 +28,7 @@ for result in result_os.split('\n'):
         print(prepare_result)
         break```python3							# break мешает выводу всех результатов 
 ```
-### Итог задания 2:
+#### Итог задания 2:
 
 ```python3
 #!/usr/bin/env python3
@@ -42,4 +42,22 @@ for result in result_os.split('\n'):
         prepare_result = result.replace('\tmodified:   ', bash_command[0].split(' ')[1] + '/')
         print(prepare_result)
 ```
+
+## ЗАДАНИЕ 3
+
+```python3
+#!/usr/bin/env python3
+
+import os
+import sys
+
+script_path ="cd " + sys.argv[1]
+bash_command = [script_path, "git status"]
+result_os = os.popen(' && '.join(bash_command)).read()
+for result in result_os.split('\n'):
+    if result.find('modified') != -1:
+        prepare_result = result.replace('\tmodified:   ', sys.argv[1] + '/')
+        print(prepare_result)
+```
+
 
