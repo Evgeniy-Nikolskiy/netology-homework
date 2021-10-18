@@ -65,7 +65,6 @@ for result in result_os.split('\n'):
 ```python3
 #!/usr/bin/env python3
 
-google_url = ('drive.google.com', 'mail.google.com', 'google.com')
 import socket
 import re
 
