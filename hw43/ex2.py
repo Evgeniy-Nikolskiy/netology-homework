@@ -1,27 +1,3 @@
-
-## ЗАДАНИЕ 1
-
-
-```json
-{ "info" : "Sample JSON output from our service\t",
-    "elements" :[
-        { "name" : "first",
-        "type" : "server",
-        "ip" : 7175		# здесь нужны кавычки "7175" и наверное вменяемый IP адрес 
-        },
-        { "name" : "second",
-        "type" : "proxy",
-        "ip : 71.78.22.43	# здесь также нужно закрыть кавычками "ip" и для "71.78.22.43"
-        }
-    ]
-}
-```json
-
-
-## ЗАДАНИЕ 2
-
-
-```python3
 #!/usr/bin/env python3
 
 import socket
@@ -58,4 +34,3 @@ with open('g1.yaml', 'w') as ym_file:
 for a, b, c in zip(ip_list,new_ip_list,host_list):
   if a != b: 
     print('[ERROR]', c , 'IP mismatch: OLD', a,' - NEW', b)
-```
