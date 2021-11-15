@@ -2,7 +2,8 @@
 
 ### Ответ к задаче 1
 
-![screen 1](/assets/1.jpg)
+https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/virt/hw54/assets/1.jpg
+
 
 ### Ответ к задаче 2
 
