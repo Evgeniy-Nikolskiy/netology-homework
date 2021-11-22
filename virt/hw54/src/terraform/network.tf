@@ -1,6 +1,6 @@
 # Network
 resource "yandex_vpc_network" "default" {
-  name = "hw"
+  name = "net"
 }
 
 resource "yandex_vpc_subnet" "default" {
