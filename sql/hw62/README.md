@@ -46,4 +46,41 @@ services:
 update clients set orders_id=3 where id_clients=1;  
 update clients set orders_id=4 where id_clients=2;  
 update clients set orders_id=5 where id_clients=3;  
+![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw62/assets/41.jpg) 
+
+### Ответ к задаче 5
+![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw62/assets/51.jpg)  
+При выполнении данной команды производится сканирование в указанной таблице. В фильтре отбирается заданное нами условие и на вывод идут все позиции, кроме этих. 
+
+### Ответ к задаче 6
+pg_dump -U test_admin_user test_db > ./etc/postgresql/backup/test_db.dump  
+docker stop f1a44ce30821  
+
+Далее отредактировал docker-compose.yml удалив из окружения базу и на всякий случай добавил новую цифру к db(хотя можно это и не делать без -d и так бы придумал новое имя для контейнера)
+
+```yaml
+version: '2.1'
+
+volumes:
+  db_data:
+    external: true
+  db_backup:
+    external: true
+services:
+  db_2:
+    image: postgres:12
+    restart: always
+    environment:
+        - POSTGRES_PASSWORD=123123
+        - POSTGRES_USER=evgen
+    volumes:
+      - ./db_data:/etc/postgresql/data
+      - ./db_backup:/etc/postgresql/backup
+    ports:
+      - ${POSTGRES_PORT:-5432}:5432
+```
+Запустил новый docker-compose.yml и проверил, что он пустой зашел в psql и проверил что нет базы test_db:  
+docker exec -it d16a16c15151 bash  
+psql -U evgen  
+\l  
 

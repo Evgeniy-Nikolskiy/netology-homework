@@ -6,12 +6,13 @@ volumes:
   db_backup:
     external: true
 services:
-  db_2:
+  db:
     image: postgres:12
     restart: always
     environment:
-        - POSTGRES_PASSWORD=123123
-        - POSTGRES_USER=evgen
+      - POSTGRES_PASSWORD=123123
+      - POSTGRES_USER=evgen
+      - POSTGRES_DB=test_db
     volumes:
       - ./db_data:/etc/postgresql/data
       - ./db_backup:/etc/postgresql/backup
