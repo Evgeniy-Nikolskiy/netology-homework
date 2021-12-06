@@ -36,7 +36,14 @@ services:
 ![подпункт 3](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw62/assets/23.jpg)  
 
 ### Ответ к задаче 3
-Количество записей можно отобразить 
-![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw62/assets/31.jpg) 
+Количество записей можно отобразить при вызове всего что есть в таблице  
+![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw62/assets/31.jpg)   
+или отдельной операцией по подсчету  
+![подпункт 2](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw62/assets/32.jpg)   
 
-![подпункт 2](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw62/assets/32.jpg) 
+### Ответ к задаче 4
+
+update clients set orders_id=3 where id_clients=1;  
+update clients set orders_id=4 where id_clients=2;  
+update clients set orders_id=5 where id_clients=3;  
+
