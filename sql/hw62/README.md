@@ -26,12 +26,17 @@ services:
       - ${POSTGRES_PORT:-5432}:5432
  ```
 
-### Ответ к задаче 2 и 3
+### Ответ к задаче 2
 
-![screen 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw62/assets/21.jpg)
+подпункт 1  
+![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw62/assets/21.jpg)  
+подпункт 2  
+![подпункт 2](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw62/assets/22.jpg)  
+подпункт 3 и 4   
+![подпункт 3](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw62/assets/23.jpg)  
 
-### Ответ к задаче 4
+### Ответ к задаче 3
+Количество записей можно отобразить 
+![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw62/assets/31.jpg) 
 
-![screen 2](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/virt/hw55/assets/4.jpg)
-
-Журналы зашифрованы на диске. В докере есть возможность защитить ключ шифрования и требовать ручной разблокировки менеджеров. Эта команда включила автоблокировку на лидере.
+![подпункт 2](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw62/assets/32.jpg) 
