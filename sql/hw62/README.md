@@ -56,7 +56,7 @@ update clients set orders_id=5 where id_clients=3;
 pg_dump -U test_admin_user test_db > ./etc/postgresql/backup/test_db.dump  
 docker stop f1a44ce30821  
 
-Далее отредактировал docker-compose.yml удалив из окружения базу и на всякий случай добавил новую цифру к db(хотя можно это и не делать без -d и так бы придумал новое имя для контейнера)
+Далее отредактировал docker-compose.yml удалив из окружения базу и на всякий случай добавил новую цифру к db (хотя можно это и не делать без -d и так было бы придумано новое имя для контейнера)
 
 ```yaml
 version: '2.1'
@@ -83,4 +83,11 @@ services:
 docker exec -it d16a16c15151 bash  
 psql -U evgen  
 \l  
+![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw62/assets/61.jpg)  
+Создал из шаблона пустую БД с таким же названием. Далее командой вытащил из дампа свою базу данных:  
+psql -U evgen test_db < ./etc/postgresql/backup/test_db.dump  
+![подпункт 2](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw62/assets/62.jpg)  
+Так как в новой БД я не создал заново роли, автоматчески они не добавились. Этого можно было избежать с помощью создания резервной копии утилитой pg_dumpall.
+Но чаще всего она применима когда нужно восстановить несколько БД.
+
 
