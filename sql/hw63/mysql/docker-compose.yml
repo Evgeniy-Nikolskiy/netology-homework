@@ -1,0 +1,23 @@
+version: '3.3'
+
+volumes:
+  data:
+    external: true
+  backup:
+    external: true
+services:
+  db:
+    image: mysql:8.0.21
+    restart: always
+    environment:
+      - MYSQL_DATABASE=test_db
+      - MYSQL_PASSWORD=123123
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_USER=evgen
+    volumes:
+      - ./data:/etc/mysql/data
+      - ./backup:/etc/mysql/backup
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
