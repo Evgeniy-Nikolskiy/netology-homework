@@ -7,6 +7,7 @@ Server version:		8.0.21 MySQL Community Server - GPL
 ![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw63/assets/631.jpg)
 
 ### Ответ к задаче 2
+Срок истечения пароля пропсал в файл my.cnf скриншот его есть в ответе по четвертой задаче.  
 ![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw63/assets/6321.jpg)  
 ![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw63/assets/6322.jpg)  
 
