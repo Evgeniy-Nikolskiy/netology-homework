@@ -32,11 +32,18 @@ curl http://localhost:9200/
 Для состояния "green" недостаточное количество реплик.
 
 ### Ответ к задаче 3
+
+* запрос API и результат вызова API для создания репозитория  
 ![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw65/assets/6531.jpg)  
+* список индексов  
 ![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw65/assets/6532.jpg)  
+* список файлов в директории со snapshot'ами  
 ![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw65/assets/6533.jpg)  
+* новый список индексов  
 ![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw65/assets/6534.jpg)  
+* запрос к API восстановления  
 ![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw65/assets/6535.jpg)  
+* итоговый список индексов  
 ![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw65/assets/6546.jpg)  
 
 
