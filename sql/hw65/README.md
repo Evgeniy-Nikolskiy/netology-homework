@@ -9,7 +9,7 @@ curl http://localhost:9200/
 {
   "name" : "netology_test",
   "cluster_name" : "my-elastic",
-  "cluster_uuid" : "_na_",
+  "cluster_uuid" : "a9kAKUsDRLOXTSWgH0ROXw",
   "version" : {
     "number" : "7.16.1",
     "build_flavor" : "default",
@@ -27,30 +27,16 @@ curl http://localhost:9200/
 
 ### Ответ к задаче 2
 
-select avg_width, attname from pg_stats where tablename = 'orders';  
-```
- avg_width | attname   
------------+---------  
-         4 | id  
-        16 | title  
-         4 | price  
-```
+![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw65/assets/652.jpg)    
+
+Для состояния "green" недостаточное количество реплик.
 
 ### Ответ к задаче 3
-```
-CREATE TABLE orders_0_499 (
-    CHECK (price <= 499 )
-) INHERITS (orders);
+![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw65/assets/6531.jpg)  
+![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw65/assets/6532.jpg)  
+![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw65/assets/6533.jpg)  
+![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw65/assets/6534.jpg)  
+![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw65/assets/6535.jpg)  
+![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw65/assets/6546.jpg)  
 
-CREATE TABLE orders_500 (
-    CHECK (price > 499 )
-) INHERITS (orders);
-```
-Ручное разбиение можно исключить на уровне проектирования в том случае если есть понимание по какому признаку лучше разбивать таблицу.
 
-### Ответ к задаче 4
-Чтобы добавить уникальность в значение столбца можно создать его резервную копию с .sql и открыть как с помощью текстового редактора где прописать уникальность столбца.  
-![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw64/assets/644.jpg)  
-
-Далее я развернул БД из бэкапа чтобы проверить что база не порушилась и к столбцу title применилась уникальность значений.  
-![подпункт 1](https://raw.githubusercontent.com/Evgeniy-Nikolskiy/netology-homework/main/sql/hw64/assets/6442.jpg)
