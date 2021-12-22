@@ -5,8 +5,6 @@ ENV container docker
 RUN yum -y install wget
 RUN yum -y install perl-Digest-SHA
 RUN yum -y install java-1.8.0-openjdk.x86_64
-RUN yum -y install nano
-RUN yum -y install sudo
 
 RUN wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.16.1-linux-x86_64.tar.gz
 RUN wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.16.1-linux-x86_64.tar.gz.sha512
