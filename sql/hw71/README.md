@@ -1,4 +1,4 @@
-## NETOLOGY HOMEWORK 6.6
+## NETOLOGY HOMEWORK 7.1
 
 ### Ответ к задаче 1
 
