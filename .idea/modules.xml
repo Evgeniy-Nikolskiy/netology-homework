@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/netology-homework.iml" filepath="$PROJECT_DIR$/.idea/netology-homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../terraform-hw/.idea/terraform-hw.iml" filepath="$PROJECT_DIR$/../terraform-hw/.idea/terraform-hw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tfc-getting-started/.idea/tfc-getting-started.iml" filepath="$PROJECT_DIR$/../tfc-getting-started/.idea/tfc-getting-started.iml" />
     </modules>
   </component>
 </project>
